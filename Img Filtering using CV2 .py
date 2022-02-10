@@ -88,9 +88,9 @@ class image_editor():
         plt.subplot(1, 3, 1), plt.imshow(self.img, cmap= 'gray')
         plt.title('Original'), plt.xticks([]), plt.yticks([])
         plt.subplot(1, 3, 2), plt.imshow(self.sobelx, cmap='gray')
-        plt.title('Sobel Horizontal'), plt.xticks([]), plt.yticks([])
-        plt.subplot(1, 3, 3), plt.imshow(self.sobely, cmap='gray')
         plt.title('Sobel Vertical'), plt.xticks([]), plt.yticks([])
+        plt.subplot(1, 3, 3), plt.imshow(self.sobely, cmap='gray')
+        plt.title('Sobel Horizontal'), plt.xticks([]), plt.yticks([])
 
         if save_path:
             cv2.imwrite(save_path, self.sobel)
