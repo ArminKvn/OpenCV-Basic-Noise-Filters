@@ -96,10 +96,4 @@ class image_editor():
             cv2.imwrite(save_path, self.sobel)
         plt.show()
 
-img = image_editor("C:/Armin/Machine learning/noisy2.jpg")
-img.median_filter(5)
-img.gaussian_filter(5)
-img.bilateral_filter(4)
-img.dilation(5)
-img.erosion(5)
-img.sobel_filter(5)
+
